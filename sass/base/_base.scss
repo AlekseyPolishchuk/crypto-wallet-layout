@@ -3,5 +3,14 @@
 }
 
 body {
-    background-color: rgb(48, 30, 128);
+    position: relative;
+    margin: 0;
+    background-color: #e5f2fe;
+    background-image: url('./../img/bg/bg-lines.svg');
+    background-size: cover;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
