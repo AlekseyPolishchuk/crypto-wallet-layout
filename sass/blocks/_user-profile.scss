@@ -1,0 +1,43 @@
+.user-profile {
+    height: 54px;
+    background: #f2f5fa;
+    border-radius: 27px;
+    display: flex;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #dce3f0;
+    }
+    &__avatar {
+        margin-top: -16px;
+        margin-right: 6px;
+        margin-left: 4px;
+    }
+
+    &__nav-button {
+        position: relative;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding-right: 41px;
+
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 17px;
+        letter-spacing: 0.02em;
+        color: #0b1432;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            top: 50%;
+            transform: translateY(-50%);
+            right: 21px;
+            background-image: url(./../img/top-icons/arrow-down.svg);
+            width: 12px;
+            height: 7px;
+        }
+    }
+}

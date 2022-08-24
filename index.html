@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto wallet</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -59,7 +62,31 @@
                 </div>
             </div>
         </div>
-        <div class="dashboard__body"></div>
+        <div class="dashboard__body">
+            <div class="dashboard__header">
+                <h1 class="dashboard__header-title">
+                    Overview
+                </h1>
+                <div class="dashboard__header-icons">
+                    <button class="header-icon">
+                        <img src="./img/top-icons/search.svg" alt="Search icon">
+                    </button>
+                    <button class="header-icon header-icon--new">
+                        <img src="./img/top-icons/bell.svg" alt="Notifications icon">
+                    </button>
+                    <div class="user-profile">
+                        <a href="#" class="user-profile__avatar">
+                            <img src="./img/top-icons/avatar.svg" alt="Avatar">
+                        </a>
+                        <button class="user-profile__nav-button">
+                            Zoia M.
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard__cards"></div>
+            <div class="dashboard__market"></div>
+        </div>
     </div>
 </body>
 
