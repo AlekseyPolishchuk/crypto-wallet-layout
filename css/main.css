@@ -37,6 +37,13 @@ a {
   text-decoration: none;
 }
 
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .dashboard {
   position: fixed;
   top: 40px;
@@ -65,17 +72,18 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.dashboard__header-title {
-  font-weight: 700;
-  font-size: 35px;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
 .dashboard__header-icons {
   display: flex;
 }
 .dashboard__header-icons > * + * {
   margin-left: 16px;
+}
+.dashboard__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard__cards > * + * {
+  margin-left: 30px;
 }
 .nav {
   display: flex;
@@ -175,10 +183,6 @@ ul.nav__icons-list a {
 }
 .user-profile__nav-button {
   position: relative;
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
   padding-right: 41px;
   font-family: inherit;
   font-weight: 500;
@@ -196,4 +200,95 @@ ul.nav__icons-list a {
   background-image: url(./../img/top-icons/arrow-down.svg);
   width: 12px;
   height: 7px;
+}
+
+.title-1 {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.title-2 {
+  font-weight: 600;
+  font-size: 27px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.balance-card {
+  position: relative;
+  width: 486px;
+  height: 244px;
+  background: #e5f2fe;
+  border-radius: 24px;
+  padding: 26px 35px 25px 28px;
+}
+.balance-card__balance-value {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.balance-card__balance-desc {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.balance-card__settings {
+  position: absolute;
+  top: 37px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balance-card__period {
+  position: absolute;
+  bottom: 25px;
+  left: 34px;
+}
+.balance-card__period > * + * {
+  margin-left: 23px;
+}
+.balance-card__period-btn {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #acbccd;
+}
+.balance-card__period-btn--active {
+  color: #040404;
+}
+.balance-card__chart {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 27px;
+}
+
+.icon-show-more::after, .icon-show-more::before, .icon-show-more {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #a0a9b2;
+}
+
+.icon-show-more {
+  position: relative;
+}
+.icon-show-more::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+}
+.icon-show-more::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
 }/*# sourceMappingURL=main.css.map */

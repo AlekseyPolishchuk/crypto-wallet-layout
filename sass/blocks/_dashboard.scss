@@ -31,14 +31,6 @@
         align-items: center;
     }
 
-    &__header-title {
-        font-weight: 700;
-        font-size: 35px;
-        letter-spacing: 0.02em;
-
-        color: #000000;
-    }
-
     &__header-icons {
         display: flex;
         & > * + * {
@@ -47,6 +39,12 @@
     }
 
     &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cards > * + * {
+        margin-left: 30px;
     }
 
     &__market {
