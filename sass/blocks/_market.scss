@@ -1,0 +1,15 @@
+.market {
+    &__header {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header-buttons {
+        display: flex;
+
+        & > * + * {
+            margin-left: 16px;
+        }
+    }
+}

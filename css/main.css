@@ -51,6 +51,8 @@ button {
   left: 40px;
   right: 40px;
   display: flex;
+  max-width: 1439px;
+  margin: 0 auto;
   background: #202020;
   border-radius: 50px;
 }
@@ -79,12 +81,14 @@ button {
   margin-left: 16px;
 }
 .dashboard__cards {
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
 }
 .dashboard__cards > * + * {
   margin-left: 30px;
 }
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -213,6 +217,13 @@ ul.nav__icons-list a {
 }
 
 .title-2 {
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.title-3 {
   font-weight: 600;
   font-size: 27px;
   letter-spacing: 0.02em;
@@ -366,4 +377,102 @@ ul.nav__icons-list a {
   position: absolute;
   bottom: -8px;
   left: 0;
+}
+
+.market__header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.market__header-buttons {
+  display: flex;
+}
+.market__header-buttons > * + * {
+  margin-left: 16px;
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.market-table th,
+.market-table td {
+  text-align: left;
+  padding: 0;
+}
+.market-table thead th {
+  padding-bottom: 22px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: #8290a0;
+}
+.market-table tbody td {
+  padding-bottom: 20px;
+}
+.market-table td:not(:last-child) {
+  padding-right: 15px;
+}
+.market-table__price {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.market-table__chanee {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #4ba582;
+}
+.market-table__cap {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.dropdown-btn {
+  position: relative;
+  padding-left: 18px;
+  padding-right: 38px;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #eff2f4;
+  border-radius: 22px;
+}
+.dropdown-btn::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+  content: "";
+  width: 12px;
+  height: 7px;
+  background-image: url("./../img/top-icons/arrow-down.svg");
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+}
+.coin__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #222;
+  border-radius: 15px;
+}
+.coin__title {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.coin__desc {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #7a899a;
 }/*# sourceMappingURL=main.css.map */
