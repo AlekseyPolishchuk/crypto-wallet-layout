@@ -360,6 +360,7 @@ ul.nav__icons-list a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .button-more__icon::after, .button-more__icon::before, .button-more__icon {
