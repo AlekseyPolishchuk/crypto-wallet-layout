@@ -52,4 +52,12 @@
     &__cards > * + * {
         margin-left: 30px;
     }
+
+    &__market {
+        display: flex;
+
+        & > * + * {
+            margin-left: 30px;
+        }
+    }
 }
